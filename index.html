@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de acceso</title>
+</head>
+<body>
+    <h1>Bienvenido/a</h1>
+    <h3>Antes de ver mis flores favoritas, cuéntame un poco sobre ti</h3>
+
+    <form action="index.html" method="get">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+        <label for="nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="nacimiento" required><br><br>
+
+        <label for="estrellas">Cantidad de estrellas que viste en el cielo:</label><br>
+        <input type="number" id="estrellas" name="estrellas" min="0" placeholder="Ej: 20" required><br><br>
+
+        <label for="color">Color favorito:</label><br>
+        <input type="color" id="color" name="color" required><br><br>
+
+        <label for="flor">Flor favorita:</label><br>
+        <select id="flor" name="flor" required>
+            <option value="">-- Elige una --</option>
+            <option value="lirios">Lirios</option>
+            <option value="peonias">Peonias</option>
+            <option value="tulipanes">Tulipanes</option>
+            <option value="lirios-valle">Lirios del valle</option>
+            <option value="fuchsia">Fuchsia</option>
+            <option value="orquideas">Orquídeas</option>
+        </select><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
